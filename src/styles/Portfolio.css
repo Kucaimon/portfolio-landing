@@ -1,0 +1,182 @@
+/* Основные стили секции */
+.portfolio-section {
+  position: relative;
+  padding: 80px 0;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Параллакс-фон */
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  z-index: -1;
+  transform: translateZ(0);
+}
+
+/* Контейнер */
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Заголовок */
+.portfolio-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Сетка проектов */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Карточка проекта */
+.portfolio-item {
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Обертка изображения */
+.portfolio-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.portfolio-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Кастомное позиционирование превью */
+.alageum-preview img {
+  object-position: top center;
+}
+
+.womazing-preview img {
+  object-position: center 25%;
+}
+
+.beauty-salon-preview img {
+  object-position: center top;
+}
+
+.cleaning-preview img {
+  object-position: center center;
+}
+
+/* Оверлей с информацией */
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 255, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 15px;
+  text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  font-size: 0.85rem;
+  margin: 8px 0;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Теги технологий */
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.portfolio-tags span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+/* Ссылка */
+.portfolio-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 60px 0;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    height: 200px;
+    max-width: 280px;
+  }
+
+  .portfolio-overlay h3 {
+    font-size: 1.2rem;
+  }
+}

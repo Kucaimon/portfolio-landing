@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-landing/static/css/main.3c0ac2d3.css",
+    "main.js": "/my-portfolio-landing/static/js/main.520fef11.js",
+    "static/media/logo.png": "/my-portfolio-landing/static/media/logo.8911e5c0b7a06eae9a5b.png",
+    "static/media/beauty-salon-preview.jpg": "/my-portfolio-landing/static/media/beauty-salon-preview.c69e5c8ffb75c8a68b49.jpg",
+    "static/media/womazing-preview.jpg": "/my-portfolio-landing/static/media/womazing-preview.972220b1ac1e9aeb130b.jpg",
+    "static/media/alageum-preview.jpg": "/my-portfolio-landing/static/media/alageum-preview.c787f0317dbedddc51c2.jpg",
+    "static/media/cleaning-preview.jpg": "/my-portfolio-landing/static/media/cleaning-preview.bbd89c7625a5486e0c3a.jpg",
+    "index.html": "/my-portfolio-landing/index.html",
+    "main.3c0ac2d3.css.map": "/my-portfolio-landing/static/css/main.3c0ac2d3.css.map",
+    "main.520fef11.js.map": "/my-portfolio-landing/static/js/main.520fef11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c0ac2d3.css",
+    "static/js/main.520fef11.js"
+  ]
+}
